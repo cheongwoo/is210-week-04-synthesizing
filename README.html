@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<title>IS 210 Assignment 04</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<style type="text/css">
+
+/*
+*   math2html: convert LaTeX equations to HTML output.
+*
+*   Copyright (C) 2009,2010 Alex Fernández
+*
+*   Released under the terms of the `2-Clause BSD license'_, in short:
+*   Copying and distribution of this file, with or without modification,
+*   are permitted in any medium without royalty provided the copyright
+*   notice and this notice are preserved.
+*   This file is offered as-is, without any warranty.
+*
+* .. _2-Clause BSD license: http://www.spdx.org/licenses/BSD-2-Clause
+*
+*   Based on eLyXer: convert LyX source files to HTML output.
+*   http://elyxer.nongnu.org/
+*/
+/* --end--
+* CSS file for LaTeX formulas.
+*/
+
+/* Formulas */
+.formula {
+	text-align: center;
+	font-family: "Droid Serif", "DejaVu Serif", "STIX", serif;
+	margin: 1.2em 0;
+}
+span.formula {
+	white-space: nowrap;
+}
+div.formula {
+	padding: 0.5ex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Basic features */
+a.eqnumber {
+	display: inline-block;
+	float: right;
+	clear: right;
+	font-weight: bold;
+}
+span.unknown {
+	color: #800000;
+}
+span.ignored, span.arraydef {
+	display: none;
+}
+.formula i {
+	letter-spacing: 0.1ex;
+}
+
+/* Alignment */
+.align-left, .align-l {
+	text-align: left;
+}
+.align-right, .align-r {
+	text-align: right;
+}
+.align-center, .align-c {
+	text-align: center;
+}
+
+/* Structures */
+span.overline, span.bar {
+	text-decoration: overline;
+}
+.fraction, .fullfraction {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.fraction .fraction {
+	font-size: 80%;
+	line-height: 100%;
+}
+span.numerator {
+	display: block;
+}
+span.denominator {
+	display: block;
+	padding: 0ex;
+	border-top: thin solid;
+}
+sup.numerator, sup.unit {
+	font-size: 70%;
+	vertical-align: 80%;
+}
+sub.denominator, sub.unit {
+	font-size: 70%;
+	vertical-align: -20%;
+}
+span.sqrt {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.1ex;
+}
+sup.root {
+	font-size: 70%;
+	position: relative;
+	left: 1.4ex;
+}
+span.radical {
+	display: inline-block;
+	padding: 0ex;
+	font-size: 150%;
+	vertical-align: top;
+}
+span.root {
+	display: inline-block;
+	border-top: thin solid;
+	padding: 0ex;
+	vertical-align: middle;
+}
+span.symbol {
+	line-height: 125%;
+	font-size: 125%;
+}
+span.bigsymbol {
+	line-height: 150%;
+	font-size: 150%;
+}
+span.largesymbol {
+	font-size: 175%;
+}
+span.hugesymbol {
+	font-size: 200%;
+}
+span.scripts {
+	display: inline-table;
+	vertical-align: middle;
+}
+.script {
+	display: table-row;
+	text-align: left;
+	line-height: 150%;
+}
+span.limits {
+	display: inline-table;
+	vertical-align: middle;
+}
+.limit {
+	display: table-row;
+	line-height: 99%;
+}
+sup.limit, sub.limit {
+	line-height: 100%;
+}
+span.symbolover {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	float: right;
+	right: 100%;
+	bottom: 0.5em;
+	width: 0px;
+}
+span.withsymbol {
+	display: inline-block;
+}
+span.symbolunder {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	float: right;
+	right: 80%;
+	top: 0.3em;
+	width: 0px;
+}
+
+/* Environments */
+span.array, span.bracketcases, span.binomial, span.environment {
+	display: inline-table;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 0em;
+	vertical-align: middle;
+}
+span.arrayrow, span.binomrow {
+	display: table-row;
+	padding: 0ex;
+	border: 0ex;
+}
+span.arraycell, span.bracket, span.case, span.binomcell, span.environmentcell {
+	display: table-cell;
+	padding: 0ex 0.2ex;
+	line-height: 99%;
+	border: 0ex;
+}
+/*
+* CSS file for LaTeX formulas, extra stuff:
+* binomials, vertical braces, stackrel, fonts and colors.
+*/
+
+/* Inline binomials */
+span.binom {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 80%;
+}
+span.binomstack {
+	display: block;
+	padding: 0em;
+}
+
+/* Over- and underbraces */
+span.overbrace {
+	border-top: 2pt solid;
+}
+span.underbrace {
+	border-bottom: 2pt solid;
+}
+
+/* Stackrel */
+span.stackrel {
+	display: inline-block;
+	text-align: center;
+}
+span.upstackrel {
+	display: block;
+	padding: 0em;
+	font-size: 80%;
+	line-height: 64%;
+	position: relative;
+	top: 0.15em;
+
+}
+span.downstackrel {
+	display: block;
+	vertical-align: bottom;
+	padding: 0em;
+}
+
+/* Fonts */
+span.mathsf, span.textsf {
+	font-style: normal;
+	font-family: sans-serif;
+}
+span.mathrm, span.textrm {
+	font-style: normal;
+	font-family: serif;
+}
+span.text, span.textnormal {
+	font-style: normal;
+}
+span.textipa {
+	color: #008080;
+}
+span.fraktur {
+	font-family: "Lucida Blackletter", eufm10, blackletter;
+}
+span.blackboard {
+	font-family: Blackboard, msbm10, serif;
+}
+span.scriptfont {
+	font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", cursive;
+	font-style: italic;
+}
+
+/* Colors */
+span.colorbox {
+	display: inline-block;
+	padding: 5px;
+}
+span.fbox {
+	display: inline-block;
+	border: thin solid black;
+	padding: 2px;
+}
+span.boxed, span.framebox {
+	display: inline-block;
+	border: thin solid black;
+	padding: 5px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="document" id="is-210-assignment-04">
+<h1 class="title">IS 210 Assignment 04</h1>
+<h2 class="subtitle" id="synthesizing-tasks">Synthesizing Tasks</h2>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr class="field"><th class="docinfo-name">College:</th><td class="field-body">CUNY School of Professional Studies</td>
+</tr>
+<tr class="field"><th class="docinfo-name">Course-Name:</th><td class="field-body">Software Application Programming I</td>
+</tr>
+<tr class="field"><th class="docinfo-name">Course-Code:</th><td class="field-body">IS 210</td>
+</tr>
+<tr class="field"><th class="docinfo-name">Points:</th><td class="field-body">15</td>
+</tr>
+<tr class="field"><th class="docinfo-name">Due-Date:</th><td class="field-body">2015-02-23T09:00:00</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="overview">
+<h1>Overview</h1>
+<p>The synthesizing tasks for week four are intended to challenge your application
+of the principals of control-flow in some pseudo-realistic contexts. Be
+especially careful to consider the problems from all angles as the unit tests
+will challenge your attention to detail.</p>
+</div>
+<div class="section" id="instructions">
+<h1>Instructions</h1>
+<p>The following tasks will either have you interacting with existing files in
+the assignment repository or creating new ones on the fly. Don't forget to add
+your interpreter directive, utf-8 encoding, and a short docstring with any new
+files that you create!</p>
+<div class="important">
+<p class="first admonition-title">Important</p>
+<p>In these exercises, you may, on occasion, come across a task that requres
+you to research or use a function or method not directly covered by the
+course text. Since Python is such a large language it would be impossible
+for the author to have included descriptions of each and every available
+function which would largely duplicate the offical Python documentation.</p>
+<p class="last">A <em>vital</em> skill to successful programming is being comfortable searching
+for and using official language documentation sources like the
+<a href="#id5"><span class="problematic" id="id6">`Python String Documentation`_</span></a> page. Throughout our coursework we will be
+practicing both the use of the language in practice and the search skills
+necessary to become functional programmers.</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h1>Synthesizing Tasks</h1>
+<div class="section" id="task-01">
+<h2>Task 01</h2>
+<p>The conditional <tt class="docutils literal">if</tt> may be nested like many other compound statements. This
+can be used to provide branching for decision trees.</p>
+<p>Here we'll imagine that you're redesigning one of the rooms in your home but
+are overwhelmed with all of the color choices available. You find it much
+easier to make a decision between two colors than having all of them in front
+of you at the same time. You know you want to have three colors in the room,
+a <tt class="docutils literal">BASE</tt> color, an <tt class="docutils literal">ACCENT</tt> color, and a <tt class="docutils literal">HIGHLIGHT</tt> color. To help
+you pick, you'll build a decision tree where you select each of your three
+colors one-at-a-time from the selections below.</p>
+<div class="section" id="specifications">
+<h3>Specifications</h3>
+<ol class="arabic">
+<li><p class="first">Create a file named <tt class="docutils literal">task_01.py</tt></p>
+</li>
+<li><p class="first">Using <tt class="docutils literal">raw_input()</tt> and nested <tt class="docutils literal">if</tt>, write a program to help you
+compare the colors in the chart below.</p>
+<ol class="arabic simple">
+<li>Prompt the user after each color is chosen to select from two new colors.</li>
+<li>Only colors of the same Type and with the same Parent Color should be
+compared against each other (eg, <tt class="docutils literal">Accent</tt> colors with the parent
+<tt class="docutils literal">Pumice</tt> are only compared against other <tt class="docutils literal">Accent</tt> colors with the
+parent <tt class="docutils literal">Pumice</tt>).</li>
+</ol>
+</li>
+<li><p class="first">Save each result into a variable named after the type, (eg, <tt class="docutils literal">BASE</tt>,
+<tt class="docutils literal">ACCENT</tt>, and <tt class="docutils literal">HIGHLIGHT</tt>).</p>
+</li>
+<li><p class="first">Complete the program by printing your color selections using a formatting
+string and <tt class="docutils literal">.format()</tt> to replace your colors in the string.</p>
+<table border="1" class="docutils">
+<caption>Colors</caption>
+<colgroup>
+<col width="33%" />
+<col width="23%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Color</th>
+<th class="head">Type</th>
+<th class="head">Parent Color</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Seattle Gray</td>
+<td>Base</td>
+<td>None</td>
+</tr>
+<tr><td>Manatee</td>
+<td>Base</td>
+<td>None</td>
+</tr>
+<tr><td>Ceramic Glaze</td>
+<td>Accent</td>
+<td>Seattle Gray</td>
+</tr>
+<tr><td>Cumulus Nimbus</td>
+<td>Accent</td>
+<td>Seattle Gray</td>
+</tr>
+<tr><td>Platinum Mist</td>
+<td>Accent</td>
+<td>Manatee</td>
+</tr>
+<tr><td>Spartan Sage</td>
+<td>Accent</td>
+<td>Manatee</td>
+</tr>
+<tr><td>Basically White</td>
+<td>Highlight</td>
+<td>Ceramic Glaze</td>
+</tr>
+<tr><td>White</td>
+<td>Highlight</td>
+<td>Ceramic Glaze</td>
+</tr>
+<tr><td>Off-White</td>
+<td>Highlight</td>
+<td>Cumulus Nimbus</td>
+</tr>
+<tr><td>Paper White</td>
+<td>Highlight</td>
+<td>Cumulus Nimbus</td>
+</tr>
+<tr><td>Bone White</td>
+<td>Highlight</td>
+<td>Platinum Mist</td>
+</tr>
+<tr><td>Just White</td>
+<td>Highlight</td>
+<td>Platinum Mist</td>
+</tr>
+<tr><td>Fractal White</td>
+<td>Highlight</td>
+<td>Spartan Sage</td>
+</tr>
+<tr><td>Not White</td>
+<td>Highlight</td>
+<td>Spartan Sage</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="section" id="examples">
+<h3>Examples</h3>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> python -i task_01.py
+<span class="generic output">Which base color, &quot;Seattle Gray&quot; or &quot;Manatee&quot;?: Manatee
+Which accent color, &quot;Platinum Mist&quot; or &quot;Spartan Sage&quot;?: Spartan Sage
+Which highlight color, &quot;Fractal White&quot; or &quot;Not White&quot;: Not White
+Your selected colors are, Manatee, Spartan Sage, and Not White.</span>
+</pre>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> python -i task_01.py
+<span class="generic output">Which base color, &quot;Seattle Gray&quot; or &quot;Manatee&quot;?: Manatee
+Which accent color, &quot;Platinum Mist&quot; or &quot;Spartan Sage&quot;?: Platinum Mist
+Which highlight color, &quot;Bone White&quot; or &quot;Just White&quot;: Bone White
+Your selected colors are, Manatee, Platinum Mist, and Bone White.</span>
+</pre>
+</div>
+</div>
+<div class="section" id="task-02">
+<h2>Task 02</h2>
+<p>When you need to perform a simple either/or assignment, a ternary expression
+can be a useful tool in your toolkit. Here, we'll build a simple alarm clock
+with snooze function.</p>
+<div class="section" id="id2">
+<h3>Specifications</h3>
+<ol class="arabic">
+<li><p class="first">Open a new file named <tt class="docutils literal">task_02.py</tt></p>
+</li>
+<li><p class="first">Ask the user what day it is using <tt class="docutils literal">raw_input()</tt></p>
+</li>
+<li><p class="first">Next, use <tt class="docutils literal">raw_input()</tt> to ask the user the time as a 4-digit number
+without a colon ('eg, <tt class="docutils literal">0605</tt>).</p>
+</li>
+<li><p class="first">Write a ternary expression to set a value to a variable named <tt class="docutils literal">SNOOZE</tt></p>
+<p>If the day is <tt class="docutils literal">'sat'</tt> or <tt class="docutils literal">'sun'</tt> or the user-submitted time is
+less-than <tt class="docutils literal">600</tt>, set <tt class="docutils literal">SNOOZE</tt> to <tt class="docutils literal">True</tt>, otherwise set it to
+<tt class="docutils literal">False</tt></p>
+</li>
+<li><p class="first">Print an repeating alarm if <tt class="docutils literal">SNOOZE</tt> is <tt class="docutils literal">False</tt>, eg:</p>
+<pre class="literal-block">
+Beep! Beep! Beep! Beep! Beep!
+</pre>
+</li>
+</ol>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p>You can't always pre-edit whether your users will input strings in the
+right case. Since Python is case sensitive it can at times be helpful to
+force user-submitted input into a consistent case like lowercase before
+starting a comparison.</p>
+<p class="last">Similarly, you can't always predict if they'll use common shorthands like
+<tt class="docutils literal">'Sat'</tt> for <tt class="docutils literal">'Saturday'</tt> or <tt class="docutils literal">'Sun'</tt> for <tt class="docutils literal">'Sunday'</tt>. When
+reasonable, also consider shortening user-inputs with string slices.</p>
+</div>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">Right now, we're going to skip an in-depth explanation of the Date/Time
+types of Python. This is not a particularly precise way of comparing
+times since it would allow a time like <tt class="docutils literal">0670</tt> to exist but for our
+simple purposes here, it's enough. Not unlike <tt class="docutils literal">Decimal()</tt>, Python has
+special object types for dates and times.</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Examples</h3>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> python -i task_02.py
+<span class="generic output">What day is it?: Tues
+What time is it?: 0813
+Beep! Beep! Beep! Beep! Beep!</span>
+</pre>
+</div>
+</div>
+<div class="section" id="task-03">
+<h2>Task 03</h2>
+<p>Combined with Python's significant mathematical capabilities, the power of
+conditionals can make for a powerful decision-making engine. To demonstrate
+this power, we're going to be a mortgage calculator to calculate the lifetime
+compound interest of a loan.</p>
+<div class="section" id="id4">
+<h3>Specifications</h3>
+<ol class="arabic">
+<li><p class="first">Create a new file <tt class="docutils literal">task_03.py</tt></p>
+</li>
+<li><p class="first">Consider the following compound interest equation:</p>
+<div class="formula">
+<i>A</i> = <i>P</i>(1 + <span class="fraction"><span class="ignored">(</span><span class="numerator"><i>r</i></span><span class="ignored">)/(</span><span class="denominator"><i>n</i></span><span class="ignored">)</span></span>)<sup><i>nt</i></sup>
+</div>
+<div class="formula">
+<span class="environment"><span class="arrayrow">
+<span class="arraycell align-r">
+<span class="text">Where</span>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+
+</span>
+<span class="arraycell align-l">
+<i>A</i><span class="text"> is the total amount accumulated, with interest, over the
+duration of the loan</span>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+
+</span>
+<span class="arraycell align-l">
+<i>P</i><span class="text"> is the principal amount (the initial amount borrowed)</span>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+
+</span>
+<span class="arraycell align-l">
+<i>r</i><span class="text"> is the annual rate of interest represented as a decimal</span>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+
+</span>
+<span class="arraycell align-l">
+<i>n</i><span class="text"> is the number of times the interest is compounded each
+year</span>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+
+</span>
+<span class="arraycell align-l">
+<i>t</i><span class="text"> is the number of years for which </span><i>P</i><span class="text"> is borrowed</span>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+
+</span>
+
+</span>
+</span>
+</div>
+</li>
+<li><p class="first">Use this equation and the table below to create a program that calculates
+the total amount owed over the life of a loan. Use <tt class="docutils literal">raw_input()</tt> to
+ask your users the following questions, in order:</p>
+<ol class="arabic simple">
+<li>What is your name?</li>
+<li>What is the amount of your principal (the amount being borrowed)?<ul>
+<li>A whole integer</li>
+</ul>
+</li>
+<li>For how many years is this loan being borrowed?<ul>
+<li>A whole integer</li>
+</ul>
+</li>
+<li>Are you pre-qualified for this loan?<ul>
+<li>Acceptable answers for this are 'Yes', 'y', 'No', and 'n'</li>
+</ul>
+</li>
+</ol>
+<table border="1" class="docutils">
+<caption>Interest Rates</caption>
+<colgroup>
+<col width="34%" />
+<col width="20%" />
+<col width="23%" />
+<col width="23%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Principal</th>
+<th class="head">Duration</th>
+<th class="head">Pre-qualified?</th>
+<th class="head">Interest Rate</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>$0 - $199,999</td>
+<td>1 - 15yrs</td>
+<td>Yes</td>
+<td>3.63%</td>
+</tr>
+<tr><td>$0 - $199,999</td>
+<td>1 - 15yrs</td>
+<td>No</td>
+<td>4.65%</td>
+</tr>
+<tr><td>$0 - $199,999</td>
+<td>16 - 20yrs</td>
+<td>Yes</td>
+<td>4.04%</td>
+</tr>
+<tr><td>$0 - $199,999</td>
+<td>16 - 20yrs</td>
+<td>No</td>
+<td>4.98%</td>
+</tr>
+<tr><td>$0 - $199,999</td>
+<td>21 - 30yrs</td>
+<td>Yes</td>
+<td>5.77%</td>
+</tr>
+<tr><td>$0 - $199,999</td>
+<td>21 - 30yrs</td>
+<td>No</td>
+<td>6.39%</td>
+</tr>
+<tr><td>$200,000 - $999,999</td>
+<td>1 - 15yrs</td>
+<td>Yes</td>
+<td>3.02%</td>
+</tr>
+<tr><td>$200,000 - $999,999</td>
+<td>1 - 15yrs</td>
+<td>No</td>
+<td>3.98%</td>
+</tr>
+<tr><td>$200,000 - $999,999</td>
+<td>16 - 20yrs</td>
+<td>Yes</td>
+<td>3.27%</td>
+</tr>
+<tr><td>$200,000 - $999,999</td>
+<td>16 - 20yrs</td>
+<td>No</td>
+<td>4.08%</td>
+</tr>
+<tr><td>$200,000 - $999,999</td>
+<td>21 - 30yrs</td>
+<td>Yes</td>
+<td>4.66%</td>
+</tr>
+<tr><td>$1,000,000+</td>
+<td>1 - 15yrs</td>
+<td>Yes</td>
+<td>2.05%</td>
+</tr>
+<tr><td>$1,000,000+</td>
+<td>16 - 20yrs</td>
+<td>Yes</td>
+<td>2.62%</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Using a series of nested <tt class="docutils literal">if</tt> statements and comparison operators,
+calculate the total amount owed as an integer and store the result
+in a variable named <tt class="docutils literal">TOTAL</tt>.</p>
+<p>Assume that interest is compounded monthly (so <em>n = 12</em> in our above
+equation).</p>
+</li>
+<li><p class="first">Next, create a report for this user. The report should include the
+user's name and a summary of the relevant data and resemble the following:</p>
+<pre class="literal-block">
+Loan Report for: Montgomery Burns
+--------------------------------------------------------------------
+      Principal:         $173,254
+      Duration:             18yrs
+      Pre-qualified?:         Yes
+
+      Total:             $358,073
+</pre>
+<p>Replacing the recipient's name, principal amount, duration,
+pre-qualification status, and total as instructed. Note the uses of
+indentation, repetition, newlines (<tt class="docutils literal">\n</tt>) and right justification.</p>
+</li>
+<li><p class="first">Save the completed report to a variable named <tt class="docutils literal">REPORT</tt>.</p>
+</li>
+<li><p class="first">Print the report.</p>
+</li>
+</ol>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">There are several gaps in the Interest Rates table for pre-qualification
+statuses, durations, or principals that are not allowed. Your program
+should take these into account and set the total to <tt class="docutils literal">None</tt>.</p>
+</div>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">Use the Decimal() class to achieve the highest precision but <tt class="docutils literal">round()</tt>
+to round the final result to the nearest whole dollar.</p>
+</div>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">The value <tt class="docutils literal">None</tt> is not the same as the string <tt class="docutils literal">'None'</tt>. How will
+that be represented in your report?</p>
+</div>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">You can use a variety of methods to build the report including
+concatenation assignment operators (<tt class="docutils literal">+=</tt>), string repetition (<tt class="docutils literal">*</tt>),
+multi-line strings (<tt class="docutils literal"><span class="pre">''''''</span></tt>), parenthetical concatenation, and
+formatting strings with <tt class="docutils literal">.format()</tt>.</p>
+</div>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">A fundamental programming principal is DRY which stands for:
+<em>Don't repeat yourself.</em> Code that is copy/pasted within the same file or
+files is prone to breakage and can cause considerable clutter. Instead
+of calculating the total owed inside all of your <tt class="docutils literal">if</tt> statements,
+consider just using the <tt class="docutils literal">if</tt> to find the interest rate and set it into
+a variable. After the <tt class="docutils literal">if</tt> block is complete, you can use the variable
+in your calculation.</p>
+</div>
+</div>
+<div class="section" id="example">
+<h3>Example</h3>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> python -i task_03.py
+<span class="generic output">What is your name? Marlowe Sizzles
+What is the principal of the loan? 173254
+For how long is this being borrowed? 18
+Are you pre-qualified? Yes
+Loan Report for: Marlowe Sizzles
+--------------------------------------------------------------------
+      Principal:         $173,254
+      Duration:             18yrs
+      Pre-qualified?:         Yes
+
+      Total:             $358,073</span>
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="executing-tests">
+<h1>Executing Tests</h1>
+<p>Code must be functional and pass tests before it will be eligible for credit.</p>
+<div class="section" id="linting">
+<h2>Linting</h2>
+<p>Lint tests check your code for syntactic or stylistic errors To execute lint
+tests against a specific file, simply open a terminal in the same directory as
+your code repository and type:</p>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> pylint filename.py
+</pre>
+<p>Where <tt class="docutils literal">filename.py</tt> is the name of the file you wish to lint test.</p>
+</div>
+<div class="section" id="unit-tests">
+<h2>Unit Tests</h2>
+<p>Unit tests check that your code performs the tested objectives. Unit tests
+may be executed individually by opening a terminal in the same directory as
+your code repository and typing:</p>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> nosetests tests/name_of_test.py
+</pre>
+<p>Where <tt class="docutils literal">name_of_test.py</tt> is the name of the testfile found in the <tt class="docutils literal">tests</tt>
+directory of your source code.</p>
+</div>
+<div class="section" id="running-all-tests">
+<h2>Running All Tests</h2>
+<p>All tests may be run simultaneously by executing the <tt class="docutils literal">runtests.sh</tt> script
+from the root of your assignment repository. To execute all tests, open a
+terminal in the same directory as your code repository and type:</p>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> sh runtests.sh
+</pre>
+</div>
+</div>
+<div class="section" id="submission">
+<h1>Submission</h1>
+<p>Code should be submitted to <a class="reference external" href="https://github.com/">GitHub</a> by means of opening a pull request.</p>
+<p>As-of Lesson 02, each student will have a branch named after his or her
+<a class="reference external" href="https://github.com/">GitHub</a> username. Pull requests should be made against the branch that
+matches your <a class="reference external" href="https://github.com/">GitHub</a> username. Pull requests made against other branches will
+be closed.  This work flow mimics the steps you took to open a pull request
+against the <tt class="docutils literal">pull</tt> branch in Week Two.</p>
+<p>For a refresher on how to open a pull request, please see homework instructions
+in Lesson 01. It is recommended that you run PyLint locally after each file
+is edited in order to reduce the number of errors found in testing.</p>
+<p>In order to receive full credit you must complete the assignment as-instructed
+and without any violations (reported in the build status). There will be
+automated tests for this assignment to provide early feedback on program code.</p>
+<p>When you have completed this assignment, please post the link to your
+pull request in the body of the assignment on Blackboard in order to receive
+credit.</p>
+</div>
+<div class="system-messages section">
+<h1>Docutils System Messages</h1>
+<div class="system-message" id="id5">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">README.rst</tt>, line 38); <em><a href="#id6">backlink</a></em></p>
+Unknown target name: &quot;python string documentation&quot;.</div>
+</div>
+</div>
+</body>
+</html>
