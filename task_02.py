@@ -10,7 +10,7 @@ DAY = DAY[:3]
 TIME = raw_input('What time is it?: ')
 TIME = int(TIME)
 
-SNOOSE = True if (DAY == 'sat' or DAY == 'sun') or TIME < 600 else False
+SNOOZE = True if (DAY == 'sat' or DAY == 'sun') or TIME < 600 else False
 
-if SNOOSE is False:
+if SNOOZE is False:
     print 'Beep! ' * 5
